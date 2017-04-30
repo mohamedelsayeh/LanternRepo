@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4033CF189D008494BD56647D /* Pods_Lantern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51427DE146AACA92F0BD23 /* Pods_Lantern.framework */; };
+		F20D14DF1EB58692003E758E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14DE1EB58692003E758E /* AppDelegate.swift */; };
+		F20D14E61EB58692003E758E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20D14E51EB58692003E758E /* Assets.xcassets */; };
+		F20D14E91EB58692003E758E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D14E71EB58692003E758E /* LaunchScreen.storyboard */; };
+		F20D15431EB587AD003E758E /* AboutTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F11EB587AD003E758E /* AboutTopic.swift */; };
+		F20D15441EB587AD003E758E /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F21EB587AD003E758E /* Device.swift */; };
+		F20D15451EB587AD003E758E /* DeviceGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F31EB587AD003E758E /* DeviceGroup.swift */; };
+		F20D15461EB587AD003E758E /* HelpTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F41EB587AD003E758E /* HelpTopic.swift */; };
+		F20D15471EB587AD003E758E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F71EB587AD003E758E /* DataManager.swift */; };
+		F20D15481EB587AD003E758E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F20D14F81EB587AD003E758E /* DataModel.xcdatamodeld */; };
+		F20D15491EB587AD003E758E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14FA1EB587AD003E758E /* NetworkManager.swift */; };
+		F20D154B1EB587AD003E758E /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14FD1EB587AD003E758E /* AboutPresenter.swift */; };
+		F20D154C1EB587AD003E758E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14FE1EB587AD003E758E /* BasePresenter.swift */; };
+		F20D154D1EB587AD003E758E /* HelpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D14FF1EB587AD003E758E /* HelpPresenter.swift */; };
+		F20D154E1EB587AD003E758E /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15021EB587AD003E758E /* About.storyboard */; };
+		F20D154F1EB587AD003E758E /* AboutDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15031EB587AD003E758E /* AboutDetailsViewController.swift */; };
+		F20D15501EB587AD003E758E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15041EB587AD003E758E /* AboutViewController.swift */; };
+		F20D15511EB587AD003E758E /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15051EB587AD003E758E /* FeedbackViewController.swift */; };
+		F20D15521EB587AD003E758E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15061EB587AD003E758E /* BaseViewController.swift */; };
+		F20D15531EB587AD003E758E /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15081EB587AD003E758E /* Help.storyboard */; };
+		F20D15541EB587AD003E758E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15091EB587AD003E758E /* HelpViewController.swift */; };
+		F20D15551EB587AD003E758E /* TopicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D150A1EB587AD003E758E /* TopicDetailsViewController.swift */; };
+		F20D15561EB587AD003E758E /* ConnectToWifiPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D150D1EB587AD003E758E /* ConnectToWifiPopup.swift */; };
+		F20D15571EB587AD003E758E /* ConnectToWifiPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20D150E1EB587AD003E758E /* ConnectToWifiPopup.xib */; };
+		F20D15581EB587AD003E758E /* DeviceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15101EB587AD003E758E /* DeviceDetailsViewController.swift */; };
+		F20D15591EB587AD003E758E /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15111EB587AD003E758E /* DevicesViewController.swift */; };
+		F20D155A1EB587AD003E758E /* OvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15121EB587AD003E758E /* OvalView.swift */; };
+		F20D155B1EB587AD003E758E /* ShapeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15131EB587AD003E758E /* ShapeKit.swift */; };
+		F20D155C1EB587AD003E758E /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15141EB587AD003E758E /* ShapeView.swift */; };
+		F20D155D1EB587AD003E758E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15151EB587AD003E758E /* Home.storyboard */; };
+		F20D155E1EB587AD003E758E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15161EB587AD003E758E /* HomeViewController.swift */; };
+		F20D155F1EB587AD003E758E /* NoDevicesPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15181EB587AD003E758E /* NoDevicesPopup.swift */; };
+		F20D15601EB587AD003E758E /* NoDevicesPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20D15191EB587AD003E758E /* NoDevicesPopup.xib */; };
+		F20D15611EB587AD003E758E /* ScenesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D151B1EB587AD003E758E /* ScenesViewController.swift */; };
+		F20D15621EB587AD003E758E /* Integration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D151D1EB587AD003E758E /* Integration.storyboard */; };
+		F20D15631EB587AD003E758E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D151F1EB587AD003E758E /* CreateAccountViewController.swift */; };
+		F20D15641EB587AD003E758E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15201EB587AD003E758E /* ForgotPasswordViewController.swift */; };
+		F20D15651EB587AD003E758E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15211EB587AD003E758E /* Login.storyboard */; };
+		F20D15661EB587AD003E758E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15221EB587AD003E758E /* LoginViewController.swift */; };
+		F20D15671EB587AD003E758E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15241EB587AD003E758E /* ChangePasswordViewController.swift */; };
+		F20D15681EB587AD003E758E /* MyAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15251EB587AD003E758E /* MyAccount.storyboard */; };
+		F20D15691EB587AD003E758E /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15261EB587AD003E758E /* MyAccountViewController.swift */; };
+		F20D156A1EB587AD003E758E /* NewDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15281EB587AD003E758E /* NewDevice.storyboard */; };
+		F20D156B1EB587AD003E758E /* NewDeviceTutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15291EB587AD003E758E /* NewDeviceTutorialsViewController.swift */; };
+		F20D156C1EB587AD003E758E /* SelectDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D152A1EB587AD003E758E /* SelectDeviceViewController.swift */; };
+		F20D156D1EB587AD003E758E /* FirmwareUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D152C1EB587AD003E758E /* FirmwareUpdateViewController.swift */; };
+		F20D156E1EB587AD003E758E /* LocationAndTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D152D1EB587AD003E758E /* LocationAndTimeViewController.swift */; };
+		F20D156F1EB587AD003E758E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D152E1EB587AD003E758E /* Settings.storyboard */; };
+		F20D15701EB587AD003E758E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D152F1EB587AD003E758E /* SettingsViewController.swift */; };
+		F20D15711EB587AD003E758E /* ContactUsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15311EB587AD003E758E /* ContactUsPopup.swift */; };
+		F20D15721EB587AD003E758E /* ContactUsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20D15321EB587AD003E758E /* ContactUsPopup.xib */; };
+		F20D15731EB587AD003E758E /* RootSideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15331EB587AD003E758E /* RootSideMenu.storyboard */; };
+		F20D15741EB587AD003E758E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15341EB587AD003E758E /* RootViewController.swift */; };
+		F20D15751EB587AD003E758E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D15351EB587AD003E758E /* SideMenuViewController.swift */; };
+		F20D15761EB587AD003E758E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20D15371EB587AD003E758E /* LaunchScreen.storyboard */; };
+		F20D15771EB587AD003E758E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D153A1EB587AD003E758E /* CustomTextField.swift */; };
+		F20D15781EB587AD003E758E /* UIImage+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20D153B1EB587AD003E758E /* UIImage+Colors.swift */; };
+		F20D15791EB587AD003E758E /* AboutScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = F20D153E1EB587AD003E758E /* AboutScreen.json */; };
+		F20D157A1EB587AD003E758E /* TermsOfUse.html in Resources */ = {isa = PBXBuildFile; fileRef = F20D153F1EB587AD003E758E /* TermsOfUse.html */; };
+		F20D157B1EB587AD003E758E /* HelpScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = F20D15411EB587AD003E758E /* HelpScreen.json */; };
+		F20D157C1EB587AD003E758E /* LanternAccount.html in Resources */ = {isa = PBXBuildFile; fileRef = F20D15421EB587AD003E758E /* LanternAccount.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		457233C35B9EA5C70A9A1F39 /* Pods-Lantern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lantern.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lantern/Pods-Lantern.debug.xcconfig"; sourceTree = "<group>"; };
+		CE51427DE146AACA92F0BD23 /* Pods_Lantern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lantern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D975BD7920D0971C22BCAC /* Pods-Lantern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lantern.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lantern/Pods-Lantern.release.xcconfig"; sourceTree = "<group>"; };
+		F20D14DB1EB58692003E758E /* Lantern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lantern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20D14DE1EB58692003E758E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F20D14E51EB58692003E758E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F20D14E81EB58692003E758E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20D14EA1EB58692003E758E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20D14F11EB587AD003E758E /* AboutTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTopic.swift; sourceTree = "<group>"; };
+		F20D14F21EB587AD003E758E /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		F20D14F31EB587AD003E758E /* DeviceGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceGroup.swift; sourceTree = "<group>"; };
+		F20D14F41EB587AD003E758E /* HelpTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTopic.swift; sourceTree = "<group>"; };
+		F20D14F71EB587AD003E758E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F20D14F91EB587AD003E758E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		F20D14FA1EB587AD003E758E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F20D14FD1EB587AD003E758E /* AboutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		F20D14FE1EB587AD003E758E /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		F20D14FF1EB587AD003E758E /* HelpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpPresenter.swift; sourceTree = "<group>"; };
+		F20D15021EB587AD003E758E /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		F20D15031EB587AD003E758E /* AboutDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutDetailsViewController.swift; sourceTree = "<group>"; };
+		F20D15041EB587AD003E758E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F20D15051EB587AD003E758E /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		F20D15061EB587AD003E758E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F20D15081EB587AD003E758E /* Help.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
+		F20D15091EB587AD003E758E /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		F20D150A1EB587AD003E758E /* TopicDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicDetailsViewController.swift; sourceTree = "<group>"; };
+		F20D150D1EB587AD003E758E /* ConnectToWifiPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectToWifiPopup.swift; sourceTree = "<group>"; };
+		F20D150E1EB587AD003E758E /* ConnectToWifiPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectToWifiPopup.xib; sourceTree = "<group>"; };
+		F20D15101EB587AD003E758E /* DeviceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewController.swift; sourceTree = "<group>"; };
+		F20D15111EB587AD003E758E /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		F20D15121EB587AD003E758E /* OvalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalView.swift; sourceTree = "<group>"; };
+		F20D15131EB587AD003E758E /* ShapeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeKit.swift; sourceTree = "<group>"; };
+		F20D15141EB587AD003E758E /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		F20D15151EB587AD003E758E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F20D15161EB587AD003E758E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F20D15181EB587AD003E758E /* NoDevicesPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDevicesPopup.swift; sourceTree = "<group>"; };
+		F20D15191EB587AD003E758E /* NoDevicesPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDevicesPopup.xib; sourceTree = "<group>"; };
+		F20D151B1EB587AD003E758E /* ScenesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScenesViewController.swift; sourceTree = "<group>"; };
+		F20D151D1EB587AD003E758E /* Integration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Integration.storyboard; sourceTree = "<group>"; };
+		F20D151F1EB587AD003E758E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F20D15201EB587AD003E758E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F20D15211EB587AD003E758E /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F20D15221EB587AD003E758E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F20D15241EB587AD003E758E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		F20D15251EB587AD003E758E /* MyAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyAccount.storyboard; sourceTree = "<group>"; };
+		F20D15261EB587AD003E758E /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		F20D15281EB587AD003E758E /* NewDevice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewDevice.storyboard; sourceTree = "<group>"; };
+		F20D15291EB587AD003E758E /* NewDeviceTutorialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDeviceTutorialsViewController.swift; sourceTree = "<group>"; };
+		F20D152A1EB587AD003E758E /* SelectDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDeviceViewController.swift; sourceTree = "<group>"; };
+		F20D152C1EB587AD003E758E /* FirmwareUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmwareUpdateViewController.swift; sourceTree = "<group>"; };
+		F20D152D1EB587AD003E758E /* LocationAndTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAndTimeViewController.swift; sourceTree = "<group>"; };
+		F20D152E1EB587AD003E758E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F20D152F1EB587AD003E758E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F20D15311EB587AD003E758E /* ContactUsPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsPopup.swift; sourceTree = "<group>"; };
+		F20D15321EB587AD003E758E /* ContactUsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactUsPopup.xib; sourceTree = "<group>"; };
+		F20D15331EB587AD003E758E /* RootSideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RootSideMenu.storyboard; sourceTree = "<group>"; };
+		F20D15341EB587AD003E758E /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F20D15351EB587AD003E758E /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		F20D15381EB587AD003E758E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20D153A1EB587AD003E758E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F20D153B1EB587AD003E758E /* UIImage+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Colors.swift"; sourceTree = "<group>"; };
+		F20D153E1EB587AD003E758E /* AboutScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AboutScreen.json; sourceTree = "<group>"; };
+		F20D153F1EB587AD003E758E /* TermsOfUse.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TermsOfUse.html; sourceTree = "<group>"; };
+		F20D15411EB587AD003E758E /* HelpScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HelpScreen.json; sourceTree = "<group>"; };
+		F20D15421EB587AD003E758E /* LanternAccount.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LanternAccount.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20D14D81EB58692003E758E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4033CF189D008494BD56647D /* Pods_Lantern.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FF6AA0D00B89BC1CC4106F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE51427DE146AACA92F0BD23 /* Pods_Lantern.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		692A1E58E2391CB666702C55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457233C35B9EA5C70A9A1F39 /* Pods-Lantern.debug.xcconfig */,
+				E8D975BD7920D0971C22BCAC /* Pods-Lantern.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F20D14D21EB58692003E758E = {
+			isa = PBXGroup;
+			children = (
+				F20D14DD1EB58692003E758E /* Lantern */,
+				F20D14DC1EB58692003E758E /* Products */,
+				692A1E58E2391CB666702C55 /* Pods */,
+				2FF6AA0D00B89BC1CC4106F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F20D14DC1EB58692003E758E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20D14DB1EB58692003E758E /* Lantern.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F20D14DD1EB58692003E758E /* Lantern */ = {
+			isa = PBXGroup;
+			children = (
+				F20D14F01EB587AD003E758E /* Model */,
+				F20D14F61EB587AD003E758E /* NetworkManager */,
+				F20D14FC1EB587AD003E758E /* Presenter */,
+				F20D15001EB587AD003E758E /* View */,
+				F20D15361EB587AD003E758E /* Base.lproj */,
+				F20D15391EB587AD003E758E /* Utilities */,
+				F20D153C1EB587AD003E758E /* ContentFiles */,
+				F20D14DE1EB58692003E758E /* AppDelegate.swift */,
+				F20D14E51EB58692003E758E /* Assets.xcassets */,
+				F20D14E71EB58692003E758E /* LaunchScreen.storyboard */,
+				F20D14EA1EB58692003E758E /* Info.plist */,
+			);
+			path = Lantern;
+			sourceTree = "<group>";
+		};
+		F20D14F01EB587AD003E758E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F20D14F11EB587AD003E758E /* AboutTopic.swift */,
+				F20D14F21EB587AD003E758E /* Device.swift */,
+				F20D14F31EB587AD003E758E /* DeviceGroup.swift */,
+				F20D14F41EB587AD003E758E /* HelpTopic.swift */,
+				F20D14F51EB587AD003E758E /* ManagedModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F20D14F51EB587AD003E758E /* ManagedModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagedModels;
+			sourceTree = "<group>";
+		};
+		F20D14F61EB587AD003E758E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F20D14F71EB587AD003E758E /* DataManager.swift */,
+				F20D14F81EB587AD003E758E /* DataModel.xcdatamodeld */,
+				F20D14FA1EB587AD003E758E /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F20D14FC1EB587AD003E758E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F20D14FD1EB587AD003E758E /* AboutPresenter.swift */,
+				F20D14FE1EB587AD003E758E /* BasePresenter.swift */,
+				F20D14FF1EB587AD003E758E /* HelpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F20D15001EB587AD003E758E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15011EB587AD003E758E /* About */,
+				F20D15061EB587AD003E758E /* BaseViewController.swift */,
+				F20D15071EB587AD003E758E /* Help */,
+				F20D150B1EB587AD003E758E /* Home */,
+				F20D151C1EB587AD003E758E /* Integration */,
+				F20D151E1EB587AD003E758E /* Login */,
+				F20D15231EB587AD003E758E /* MyAccount */,
+				F20D15271EB587AD003E758E /* NewDevice */,
+				F20D152B1EB587AD003E758E /* Settings */,
+				F20D15301EB587AD003E758E /* SideMenu */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F20D15011EB587AD003E758E /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15021EB587AD003E758E /* About.storyboard */,
+				F20D15031EB587AD003E758E /* AboutDetailsViewController.swift */,
+				F20D15041EB587AD003E758E /* AboutViewController.swift */,
+				F20D15051EB587AD003E758E /* FeedbackViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		F20D15071EB587AD003E758E /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15081EB587AD003E758E /* Help.storyboard */,
+				F20D15091EB587AD003E758E /* HelpViewController.swift */,
+				F20D150A1EB587AD003E758E /* TopicDetailsViewController.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		F20D150B1EB587AD003E758E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F20D150C1EB587AD003E758E /* ConnectToWifiPopup */,
+				F20D150F1EB587AD003E758E /* Devices */,
+				F20D15151EB587AD003E758E /* Home.storyboard */,
+				F20D15161EB587AD003E758E /* HomeViewController.swift */,
+				F20D15171EB587AD003E758E /* NoDevicesPopup */,
+				F20D151A1EB587AD003E758E /* Scenes */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F20D150C1EB587AD003E758E /* ConnectToWifiPopup */ = {
+			isa = PBXGroup;
+			children = (
+				F20D150D1EB587AD003E758E /* ConnectToWifiPopup.swift */,
+				F20D150E1EB587AD003E758E /* ConnectToWifiPopup.xib */,
+			);
+			path = ConnectToWifiPopup;
+			sourceTree = "<group>";
+		};
+		F20D150F1EB587AD003E758E /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15101EB587AD003E758E /* DeviceDetailsViewController.swift */,
+				F20D15111EB587AD003E758E /* DevicesViewController.swift */,
+				F20D15121EB587AD003E758E /* OvalView.swift */,
+				F20D15131EB587AD003E758E /* ShapeKit.swift */,
+				F20D15141EB587AD003E758E /* ShapeView.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		F20D15171EB587AD003E758E /* NoDevicesPopup */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15181EB587AD003E758E /* NoDevicesPopup.swift */,
+				F20D15191EB587AD003E758E /* NoDevicesPopup.xib */,
+			);
+			path = NoDevicesPopup;
+			sourceTree = "<group>";
+		};
+		F20D151A1EB587AD003E758E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F20D151B1EB587AD003E758E /* ScenesViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F20D151C1EB587AD003E758E /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				F20D151D1EB587AD003E758E /* Integration.storyboard */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		F20D151E1EB587AD003E758E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F20D151F1EB587AD003E758E /* CreateAccountViewController.swift */,
+				F20D15201EB587AD003E758E /* ForgotPasswordViewController.swift */,
+				F20D15211EB587AD003E758E /* Login.storyboard */,
+				F20D15221EB587AD003E758E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F20D15231EB587AD003E758E /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15241EB587AD003E758E /* ChangePasswordViewController.swift */,
+				F20D15251EB587AD003E758E /* MyAccount.storyboard */,
+				F20D15261EB587AD003E758E /* MyAccountViewController.swift */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		F20D15271EB587AD003E758E /* NewDevice */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15281EB587AD003E758E /* NewDevice.storyboard */,
+				F20D15291EB587AD003E758E /* NewDeviceTutorialsViewController.swift */,
+				F20D152A1EB587AD003E758E /* SelectDeviceViewController.swift */,
+			);
+			path = NewDevice;
+			sourceTree = "<group>";
+		};
+		F20D152B1EB587AD003E758E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F20D152C1EB587AD003E758E /* FirmwareUpdateViewController.swift */,
+				F20D152D1EB587AD003E758E /* LocationAndTimeViewController.swift */,
+				F20D152E1EB587AD003E758E /* Settings.storyboard */,
+				F20D152F1EB587AD003E758E /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F20D15301EB587AD003E758E /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15311EB587AD003E758E /* ContactUsPopup.swift */,
+				F20D15321EB587AD003E758E /* ContactUsPopup.xib */,
+				F20D15331EB587AD003E758E /* RootSideMenu.storyboard */,
+				F20D15341EB587AD003E758E /* RootViewController.swift */,
+				F20D15351EB587AD003E758E /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		F20D15361EB587AD003E758E /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15371EB587AD003E758E /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		F20D15391EB587AD003E758E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F20D153A1EB587AD003E758E /* CustomTextField.swift */,
+				F20D153B1EB587AD003E758E /* UIImage+Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F20D153C1EB587AD003E758E /* ContentFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F20D153D1EB587AD003E758E /* About */,
+				F20D15401EB587AD003E758E /* Help */,
+			);
+			path = ContentFiles;
+			sourceTree = "<group>";
+		};
+		F20D153D1EB587AD003E758E /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F20D153E1EB587AD003E758E /* AboutScreen.json */,
+				F20D153F1EB587AD003E758E /* TermsOfUse.html */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		F20D15401EB587AD003E758E /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				F20D15411EB587AD003E758E /* HelpScreen.json */,
+				F20D15421EB587AD003E758E /* LanternAccount.html */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F20D14DA1EB58692003E758E /* Lantern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20D14ED1EB58692003E758E /* Build configuration list for PBXNativeTarget "Lantern" */;
+			buildPhases = (
+				10AFE97C1448FF153050CFC2 /* [CP] Check Pods Manifest.lock */,
+				F20D14D71EB58692003E758E /* Sources */,
+				F20D14D81EB58692003E758E /* Frameworks */,
+				F20D14D91EB58692003E758E /* Resources */,
+				7B5CA0143B257B42C9F52C31 /* [CP] Embed Pods Frameworks */,
+				5FB9972FDF0FF858696EC554 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lantern;
+			productName = Lantern;
+			productReference = F20D14DB1EB58692003E758E /* Lantern.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F20D14D31EB58692003E758E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mohamed Elsayeh";
+				TargetAttributes = {
+					F20D14DA1EB58692003E758E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8V8H4QJ9NC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F20D14D61EB58692003E758E /* Build configuration list for PBXProject "Lantern" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F20D14D21EB58692003E758E;
+			productRefGroup = F20D14DC1EB58692003E758E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F20D14DA1EB58692003E758E /* Lantern */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F20D14D91EB58692003E758E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20D157B1EB587AD003E758E /* HelpScreen.json in Resources */,
+				F20D155D1EB587AD003E758E /* Home.storyboard in Resources */,
+				F20D15731EB587AD003E758E /* RootSideMenu.storyboard in Resources */,
+				F20D157C1EB587AD003E758E /* LanternAccount.html in Resources */,
+				F20D15721EB587AD003E758E /* ContactUsPopup.xib in Resources */,
+				F20D156A1EB587AD003E758E /* NewDevice.storyboard in Resources */,
+				F20D14E91EB58692003E758E /* LaunchScreen.storyboard in Resources */,
+				F20D15621EB587AD003E758E /* Integration.storyboard in Resources */,
+				F20D15571EB587AD003E758E /* ConnectToWifiPopup.xib in Resources */,
+				F20D157A1EB587AD003E758E /* TermsOfUse.html in Resources */,
+				F20D15791EB587AD003E758E /* AboutScreen.json in Resources */,
+				F20D15531EB587AD003E758E /* Help.storyboard in Resources */,
+				F20D15761EB587AD003E758E /* LaunchScreen.storyboard in Resources */,
+				F20D15681EB587AD003E758E /* MyAccount.storyboard in Resources */,
+				F20D154E1EB587AD003E758E /* About.storyboard in Resources */,
+				F20D14E61EB58692003E758E /* Assets.xcassets in Resources */,
+				F20D15651EB587AD003E758E /* Login.storyboard in Resources */,
+				F20D156F1EB587AD003E758E /* Settings.storyboard in Resources */,
+				F20D15601EB587AD003E758E /* NoDevicesPopup.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AFE97C1448FF153050CFC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB9972FDF0FF858696EC554 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lantern/Pods-Lantern-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B5CA0143B257B42C9F52C31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lantern/Pods-Lantern-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F20D14D71EB58692003E758E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20D15441EB587AD003E758E /* Device.swift in Sources */,
+				F20D156B1EB587AD003E758E /* NewDeviceTutorialsViewController.swift in Sources */,
+				F20D15741EB587AD003E758E /* RootViewController.swift in Sources */,
+				F20D154C1EB587AD003E758E /* BasePresenter.swift in Sources */,
+				F20D15771EB587AD003E758E /* CustomTextField.swift in Sources */,
+				F20D155C1EB587AD003E758E /* ShapeView.swift in Sources */,
+				F20D15671EB587AD003E758E /* ChangePasswordViewController.swift in Sources */,
+				F20D154F1EB587AD003E758E /* AboutDetailsViewController.swift in Sources */,
+				F20D15511EB587AD003E758E /* FeedbackViewController.swift in Sources */,
+				F20D15661EB587AD003E758E /* LoginViewController.swift in Sources */,
+				F20D15471EB587AD003E758E /* DataManager.swift in Sources */,
+				F20D15521EB587AD003E758E /* BaseViewController.swift in Sources */,
+				F20D155B1EB587AD003E758E /* ShapeKit.swift in Sources */,
+				F20D15641EB587AD003E758E /* ForgotPasswordViewController.swift in Sources */,
+				F20D155F1EB587AD003E758E /* NoDevicesPopup.swift in Sources */,
+				F20D156E1EB587AD003E758E /* LocationAndTimeViewController.swift in Sources */,
+				F20D15451EB587AD003E758E /* DeviceGroup.swift in Sources */,
+				F20D15751EB587AD003E758E /* SideMenuViewController.swift in Sources */,
+				F20D154B1EB587AD003E758E /* AboutPresenter.swift in Sources */,
+				F20D15551EB587AD003E758E /* TopicDetailsViewController.swift in Sources */,
+				F20D155E1EB587AD003E758E /* HomeViewController.swift in Sources */,
+				F20D154D1EB587AD003E758E /* HelpPresenter.swift in Sources */,
+				F20D15581EB587AD003E758E /* DeviceDetailsViewController.swift in Sources */,
+				F20D15631EB587AD003E758E /* CreateAccountViewController.swift in Sources */,
+				F20D15691EB587AD003E758E /* MyAccountViewController.swift in Sources */,
+				F20D15481EB587AD003E758E /* DataModel.xcdatamodeld in Sources */,
+				F20D15491EB587AD003E758E /* NetworkManager.swift in Sources */,
+				F20D15611EB587AD003E758E /* ScenesViewController.swift in Sources */,
+				F20D15541EB587AD003E758E /* HelpViewController.swift in Sources */,
+				F20D155A1EB587AD003E758E /* OvalView.swift in Sources */,
+				F20D15561EB587AD003E758E /* ConnectToWifiPopup.swift in Sources */,
+				F20D15711EB587AD003E758E /* ContactUsPopup.swift in Sources */,
+				F20D14DF1EB58692003E758E /* AppDelegate.swift in Sources */,
+				F20D156D1EB587AD003E758E /* FirmwareUpdateViewController.swift in Sources */,
+				F20D156C1EB587AD003E758E /* SelectDeviceViewController.swift in Sources */,
+				F20D15591EB587AD003E758E /* DevicesViewController.swift in Sources */,
+				F20D15431EB587AD003E758E /* AboutTopic.swift in Sources */,
+				F20D15781EB587AD003E758E /* UIImage+Colors.swift in Sources */,
+				F20D15501EB587AD003E758E /* AboutViewController.swift in Sources */,
+				F20D15461EB587AD003E758E /* HelpTopic.swift in Sources */,
+				F20D15701EB587AD003E758E /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F20D14E71EB58692003E758E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20D14E81EB58692003E758E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F20D15371EB587AD003E758E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20D15381EB587AD003E758E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F20D14EB1EB58692003E758E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F20D14EC1EB58692003E758E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F20D14EE1EB58692003E758E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457233C35B9EA5C70A9A1F39 /* Pods-Lantern.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8V8H4QJ9NC;
+				INFOPLIST_FILE = Lantern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mms.Lantern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F20D14EF1EB58692003E758E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D975BD7920D0971C22BCAC /* Pods-Lantern.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8V8H4QJ9NC;
+				INFOPLIST_FILE = Lantern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mms.Lantern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20D14D61EB58692003E758E /* Build configuration list for PBXProject "Lantern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20D14EB1EB58692003E758E /* Debug */,
+				F20D14EC1EB58692003E758E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20D14ED1EB58692003E758E /* Build configuration list for PBXNativeTarget "Lantern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20D14EE1EB58692003E758E /* Debug */,
+				F20D14EF1EB58692003E758E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F20D14F81EB587AD003E758E /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F20D14F91EB587AD003E758E /* DataModel.xcdatamodel */,
+			);
+			currentVersion = F20D14F91EB587AD003E758E /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F20D14D31EB58692003E758E /* Project object */;
+}

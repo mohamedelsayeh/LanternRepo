@@ -1,0 +1,29 @@
+PODS:
+  - ACFloatingTextfield-Swift (1.0.5)
+  - Alamofire (4.3.0)
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - RealmSwift (2.4.2):
+    - Realm (= 2.4.2)
+  - SideMenuController (0.2.4)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - ACFloatingTextfield-Swift
+  - Alamofire
+  - RealmSwift
+  - SideMenuController
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ACFloatingTextfield-Swift: c288c6a79f60e3ea8ba40c3a6bed3f9b0acea003
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  RealmSwift: 9556c0fe0f0cfecacfb755ae9e68ff379fc6bead
+  SideMenuController: b463d2b3aa58e2afe57f57a07938fa9a647894ca
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 387b430f02f57232a26eedb7adcf6135bd8ba0ec
+
+COCOAPODS: 1.2.0
