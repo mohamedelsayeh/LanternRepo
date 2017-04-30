@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MNGDevice" representedClassName="MNGDevice" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" defaultValueString="0.0.0.0" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" defaultValueString="No description" syncable="YES"/>
+        <attribute name="deviceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Untitled" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MNGGroup" inverseName="devices" inverseEntity="MNGGroup" syncable="YES"/>
+    </entity>
+    <entity name="MNGGroup" representedClassName="MNGGroup" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Untitled" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MNGDevice" inverseName="group" inverseEntity="MNGDevice" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MNGDevice" positionX="-54" positionY="50" width="128" height="133"/>
+        <element name="MNGGroup" positionX="160" positionY="-1" width="128" height="73"/>
+    </elements>
+</model>
