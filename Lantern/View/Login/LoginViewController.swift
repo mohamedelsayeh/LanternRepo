@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 let IMG_SHOW_PASSWORD = UIImage(named: "password_invisible")
 let IMG_HIDE_PASSWORD = UIImage(named: "password_visible")
 
@@ -20,6 +21,7 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        authenticateWithTouchId()
     }
                 
     override func didReceiveMemoryWarning() {
@@ -33,7 +35,7 @@ class LoginViewController: BaseViewController {
             shouldPerform = false
             showSkipLoginAlert()
         } else if identifier == "performLoginSegue"{
-            UserDefaults.standard.set(true, forKey: "isLoggedInUser")
+            shouldPerform = false
         }
         return shouldPerform
     }
@@ -51,5 +53,39 @@ class LoginViewController: BaseViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+    }
+    
+    func authenticateWithTouchId() {
+        let context : LAContext = LAContext()
+        var error: NSError?
+        let reasonString = "Login using touchID."
+        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString, reply: { (success, evalPolicyError) in
+                if success {
+                    self.performSegue(withIdentifier: "performLoginSegue", sender: self)
+                    UserDefaults.standard.set(true, forKey: "isLoggedInUser")
+                }
+                else {
+                    // If authentication failed then show a message to the console with a short description.
+                    // In case that the error is a user fallback, then show the password alert view.
+                    print(evalPolicyError!.localizedDescription)
+                    
+                    switch evalPolicyError!._code {
+                        
+                    case LAError.systemCancel.rawValue:
+                        print("Authentication was cancelled by the system")
+                        
+                    case LAError.userCancel.rawValue:
+                        print("Authentication was cancelled by the user")
+                        
+                    case LAError.userFallback.rawValue:
+                        print("User selected to enter custom password")
+
+                    default:
+                        print("Authentication failed")
+                    }
+                }
+            })
+        }
     }
 }
