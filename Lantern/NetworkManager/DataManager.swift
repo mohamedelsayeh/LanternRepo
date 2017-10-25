@@ -69,7 +69,7 @@ class DataManager: NSObject {
                 groupsList[sourceIndexPath.section].devices.move(from: sourceIndexPath.row, to: destinationIndexPath.row)
             } else {
                 groupsList[destinationIndexPath.section].devices.insert(selectedDevice, at: destinationIndexPath.row)
-                groupsList[sourceIndexPath.section].devices.remove(objectAtIndex: sourceIndexPath.row)
+                groupsList[sourceIndexPath.section].devices.remove(at: sourceIndexPath.row)
             }
         }
         if groupsList[sourceIndexPath.section].devices.count == 0 {
@@ -80,7 +80,7 @@ class DataManager: NSObject {
     //Delete device
     func deleteDevice(at index:Int, from group:DeviceGroup) {
         try! uiRealm.write {
-            group.devices.remove(objectAtIndex: index)
+            group.devices.remove(at: index)
         }
         if group.devices.count == 0 {
             deleteGroup(group: group)

@@ -245,8 +245,8 @@
 		F20D15001EB587AD003E758E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F20D15011EB587AD003E758E /* About */,
 				F20D15061EB587AD003E758E /* BaseViewController.swift */,
+				F20D15011EB587AD003E758E /* About */,
 				F20D15071EB587AD003E758E /* Help */,
 				F20D150B1EB587AD003E758E /* Home */,
 				F20D151C1EB587AD003E758E /* Integration */,

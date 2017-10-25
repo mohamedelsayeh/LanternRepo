@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FaV-4p-8nE">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FaV-4p-8nE">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Help-->
         <scene sceneID="UVa-yT-gXO">
             <objects>
-                <viewController id="yv2-H8-2pU" customClass="HelpViewController" customModule="GridWorks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yv2-H8-2pU" customClass="HelpViewController" customModule="Lantern" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ja7-gs-lWQ"/>
                         <viewControllerLayoutGuide type="bottom" id="97E-fB-jXT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xFd-FU-X26">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cwm-Oa-p5o">
-                                <rect key="frame" x="-4" y="64" width="383" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="helpCell" id="TYh-6T-UY7">
-                                        <rect key="frame" x="0.0" y="28" width="383" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TYh-6T-UY7" id="VXb-LV-yDM">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasa Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K68-FS-tGD">
-                                                    <rect key="frame" x="28" y="11.5" width="327" height="20"/>
+                                                    <rect key="frame" x="28" y="11.666666666666664" width="319" height="20"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                                                     <color key="textColor" red="0.3294117647" green="0.69019607839999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -56,10 +61,10 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gn-vY-pqx">
-                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse Topics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOz-Pr-dPx">
-                                        <rect key="frame" x="20" y="19.5" width="119" height="22.5"/>
+                                        <rect key="frame" x="20" y="19.666666666666671" width="119" height="22.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -85,13 +90,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cwm-Oa-p5o" firstAttribute="leading" secondItem="xFd-FU-X26" secondAttribute="leadingMargin" constant="-20" id="10z-VF-PpX"/>
-                            <constraint firstItem="97E-fB-jXT" firstAttribute="top" secondItem="Cwm-Oa-p5o" secondAttribute="bottom" id="4Dr-2x-1cx"/>
+                            <constraint firstAttribute="bottom" secondItem="Cwm-Oa-p5o" secondAttribute="bottom" id="30e-fA-NeS"/>
+                            <constraint firstAttribute="trailing" secondItem="Cwm-Oa-p5o" secondAttribute="trailing" id="4Rq-ED-QYA"/>
                             <constraint firstItem="3gn-vY-pqx" firstAttribute="top" secondItem="ja7-gs-lWQ" secondAttribute="bottom" id="6K1-JF-6qv"/>
                             <constraint firstAttribute="trailing" secondItem="3gn-vY-pqx" secondAttribute="trailing" id="TXU-fZ-z0B"/>
+                            <constraint firstItem="Cwm-Oa-p5o" firstAttribute="leading" secondItem="xFd-FU-X26" secondAttribute="leading" id="Z1o-Hk-jQ3"/>
                             <constraint firstItem="3gn-vY-pqx" firstAttribute="leading" secondItem="xFd-FU-X26" secondAttribute="leading" id="dWX-iz-Qft"/>
                             <constraint firstItem="Cwm-Oa-p5o" firstAttribute="top" secondItem="ja7-gs-lWQ" secondAttribute="bottom" id="nae-p8-gbS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Cwm-Oa-p5o" secondAttribute="trailing" constant="-20" id="uLI-se-I76"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Help" id="ryf-O9-q5D"/>
@@ -101,22 +106,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1z5-JX-N1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="134"/>
+            <point key="canvasLocation" x="272.80000000000001" y="133.74384236453201"/>
         </scene>
         <!--Help-->
         <scene sceneID="OkK-We-dKy">
             <objects>
-                <viewController storyboardIdentifier="topicDetailsVC" title="Help" automaticallyAdjustsScrollViewInsets="NO" id="ThD-qf-Is6" customClass="TopicDetailsViewController" customModule="GridWorks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="topicDetailsVC" title="Help" automaticallyAdjustsScrollViewInsets="NO" id="ThD-qf-Is6" customClass="TopicDetailsViewController" customModule="Lantern" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K5Q-fD-qPw"/>
                         <viewControllerLayoutGuide type="bottom" id="152-8b-qbA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dfh-ZN-aXW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-vs-dec">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="16" y="44" width="343" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -126,8 +131,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aJG-vs-dec" firstAttribute="top" secondItem="K5Q-fD-qPw" secondAttribute="bottom" id="Fae-7n-AG9"/>
-                            <constraint firstItem="152-8b-qbA" firstAttribute="top" secondItem="aJG-vs-dec" secondAttribute="bottom" id="OBQ-5Z-P11"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aJG-vs-dec" secondAttribute="trailing" id="Ti7-6B-aqH"/>
+                            <constraint firstAttribute="bottom" secondItem="aJG-vs-dec" secondAttribute="bottom" id="jJn-sh-YNz"/>
                             <constraint firstItem="aJG-vs-dec" firstAttribute="leading" secondItem="dfh-ZN-aXW" secondAttribute="leadingMargin" id="nh0-O4-ZwV"/>
                         </constraints>
                     </view>
@@ -137,14 +142,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1q-5k-JM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="134"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="133.74384236453201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ADd-xY-WQV">
             <objects>
                 <navigationController id="FaV-4p-8nE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MBO-WY-Z3Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

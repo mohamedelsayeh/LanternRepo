@@ -51,7 +51,12 @@ class HomeViewController: UITabBarController {
     
     func setupTabBarSelectedImage() {
         let numberOfItems = CGFloat(tabBar.items!.count)
-        let tabBarItemSize = CGSize(width: tabBar.frame.width / numberOfItems, height: tabBar.frame.height)
+        var tabBarItemSize = CGSize(width: tabBar.frame.width / numberOfItems, height: tabBar.frame.height)
+        if UIDevice().userInterfaceIdiom == .phone {
+            if UIScreen.main.nativeBounds.height == 2436 {
+                tabBarItemSize.height += 35
+            }
+        }
         tabBar.selectionIndicatorImage = UIImage.imageWithColor(color: .white, size: tabBarItemSize)
     }
     

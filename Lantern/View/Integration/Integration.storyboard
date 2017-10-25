@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L9D-SU-gJD">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L9D-SU-gJD">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="5FR-Ud-VOC">
             <objects>
                 <navigationController id="L9D-SU-gJD" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2h6-yB-pLa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -35,17 +40,17 @@
                         <viewControllerLayoutGuide type="bottom" id="fWn-2r-VvN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YVQ-eq-o9s">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ujy-sJ-UlD">
-                                <rect key="frame" x="-4" y="64" width="383" height="282"/>
+                                <rect key="frame" x="-4" y="88" width="383" height="325.66666666666669"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-rC-I75">
-                                        <rect key="frame" x="74" y="46" width="236" height="190"/>
+                                        <rect key="frame" x="74.333333333333314" y="68.333333333333329" width="236" height="190"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Lantern as a Smart Home Skill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-3f-FJ6">
-                                                <rect key="frame" x="20" y="140" width="196" height="38"/>
+                                                <rect key="frame" x="20" y="139.99999999999997" width="196" height="37.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="196" id="g67-nq-5RF"/>
                                                 </constraints>
@@ -54,7 +59,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alexa1" translatesAutoresizingMaskIntoConstraints="NO" id="r65-Hf-wSw">
-                                                <rect key="frame" x="67" y="0.0" width="103" height="130"/>
+                                                <rect key="frame" x="67.000000000000014" y="0.0" width="102.99999999999999" height="129.99999999999997"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="103" id="s8w-Xa-tE2"/>
                                                     <constraint firstAttribute="height" constant="130" id="wco-cH-OOg"/>
@@ -79,20 +84,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPQ-V4-mqT">
-                                <rect key="frame" x="-4" y="346" width="383" height="282"/>
+                                <rect key="frame" x="-4" y="413.66666666666674" width="383" height="325.33333333333326"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CsG-Eq-AFs">
-                                        <rect key="frame" x="73" y="26" width="236" height="230"/>
+                                        <rect key="frame" x="73.333333333333314" y="48" width="236" height="229.99999999999994"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alexa2" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-hC-oHD">
-                                                <rect key="frame" x="68" y="15" width="100" height="160"/>
+                                                <rect key="frame" x="68.000000000000014" y="15" width="99.999999999999986" height="159.99999999999994"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="9Mu-P6-BIn"/>
                                                     <constraint firstAttribute="height" constant="160" id="hcb-oX-BvM"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Alexa's Smart Home commands" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9K-lu-Amc">
-                                                <rect key="frame" x="20" y="183" width="196" height="38"/>
+                                                <rect key="frame" x="20" y="182.99999999999994" width="196" height="37.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="196" id="GIT-Uf-am2"/>
                                                 </constraints>
@@ -120,7 +125,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will launch Amazon's help page in your browser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-vi-jWC">
-                                <rect key="frame" x="10" y="638" width="355" height="19"/>
+                                <rect key="frame" x="10" y="749" width="355" height="19"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

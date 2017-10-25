@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UHy-oX-W8M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UHy-oX-W8M">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="SB9-XC-XfB">
             <objects>
                 <navigationController id="UHy-oX-W8M" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NAh-mC-axI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -360,7 +366,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="383" height="85"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wle-TS-HZf" id="BK5-SP-3fq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="84"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="84.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0G-uP-tnT">
@@ -387,7 +393,7 @@
                                                                 <constraint firstAttribute="width" constant="15" id="Lzd-b3-0Qq"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="424F21FA-3F95-4EDC-AD80-8B47212BF42C" translatesAutoresizingMaskIntoConstraints="NO" id="PCF-5y-mir">
+                                                        <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:PCF-5y-mir:image" translatesAutoresizingMaskIntoConstraints="NO" id="PCF-5y-mir">
                                                             <rect key="frame" x="15" y="10" width="50" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="obK-Zw-wrC"/>
@@ -420,7 +426,7 @@
                                                 <rect key="frame" x="0.0" y="113" width="383" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e8w-WZ-diT" id="w9j-cX-4mU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="49"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-GJ-K9d">
@@ -474,7 +480,7 @@
                                                 <rect key="frame" x="0.0" y="163" width="383" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zy0-rc-jCo" id="ICh-VW-9do">
-                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="49"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop here to create new group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G0-LW-wJG">
@@ -700,7 +706,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="424F21FA-3F95-4EDC-AD80-8B47212BF42C" width="65" height="98">
+        <image name="arrow_image" width="198" height="175"/>
+        <image name="calender_icon" width="36" height="36"/>
+        <image name="custom_scene" width="143" height="142"/>
+        <image name="device_smart_plug" width="65" height="98"/>
+        <image name="devices_icon" width="25" height="25"/>
+        <image name="edit_icon" width="20" height="20"/>
+        <image name="imageView:PCF-5y-mir:image" width="65" height="98">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1176,12 +1188,6 @@ bUJtS21QbVhtW21gbW9tc216bYJtj22UbZZtmG2dbaVtqG2tbbVtuG3Kbc1t0gAAAAAAAAIBAAAAAAAA
 AEEAAAAAAAAAAAAAAAAAAG3UA
 </mutableData>
         </image>
-        <image name="arrow_image" width="198" height="175"/>
-        <image name="calender_icon" width="36" height="36"/>
-        <image name="custom_scene" width="143" height="142"/>
-        <image name="device_smart_plug" width="65" height="98"/>
-        <image name="devices_icon" width="25" height="25"/>
-        <image name="edit_icon" width="20" height="20"/>
         <image name="morning_scene" width="143" height="142"/>
         <image name="movie_night_scene" width="143" height="142"/>
         <image name="night_scene" width="143" height="143"/>
